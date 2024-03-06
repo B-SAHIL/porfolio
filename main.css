@@ -1,0 +1,124 @@
+body {
+  background-color: #b4d4ff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20x;
+}
+
+.container {
+  text-align: center;
+}
+
+.container img {
+  width: 160px;
+  max-height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: #7db4fc solid 2px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.reviews {
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects img {
+  margin: 10px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #adccf5;
+  padding: 10px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin: 0 40px;
+}
+
+.footer-list img {
+  min-width: 30px;
+  height: auto;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+.footer-icon-gmail {
+  width: 39px;
+}
+
+.about {
+  max-width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about li {
+  list-style-type: none;
+  display: inline;
+}
+
+.about ul {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 780px) {
+  .reviews {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  .projects img {
+    margin: 5px 10px;
+  }
+
+  .about {
+    max-width: 90%;
+  }
+
+  .footer-list li {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .projects img {
+    margin: 0px 0px !important;
+  }
+}
